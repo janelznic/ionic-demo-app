@@ -1,0 +1,18 @@
+<ion-view view-title="My skills">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="skill in skills" type="item-text-wrap" href="#/tab/skills/{{skill.id}}">
+        <!--<img ng-src="{{skill.face}}">-->
+        <!--<ion-icon name="{{skill.icon}}"></ion-icon>-->
+        <ion-icon class="icon {{skill.icon}}" style="left: 26px;"></ion-icon>
+        <h2>{{skill.title}}</h2>
+        <p>{{skill.desc}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(skill)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,11 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-stable">
+    <h1 class="title">CV detail</h1>
+    <button class="button button-clear button-primary" ng-click="modal.hide()">Close</button>
+  </ion-header-bar>
+  <ion-content class="padding" scroll="true">
+    <ion-scroll zooming="true" direction="xy" delegate-handle="zoom-pane" class="zoom-pane" min-zoom="1" scrollbar-x="true" scrollbar-y="true">
+      <img ng-src="img/cv.png">
+    </ion-scroll>
+  </ion-content>
+</ion-modal-view>
